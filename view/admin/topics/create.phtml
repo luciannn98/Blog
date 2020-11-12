@@ -1,0 +1,28 @@
+<!-- Create Content -->
+<div class="col-md-8">
+	<div class="card my-4">
+		<h5 class="card-header">Create new content</h5>
+		<div class="card-body">
+			<form method="post" enctype="multipart/form-data">
+				<div class="form-group">
+					<select name="data[category]" class="form-control">
+						<option>Select category...</option>
+						<?php foreach ($this->view_data['category'] as $category): ?>
+							<option value="<?php print $category['id']?>"><?php print $category['category_name']?></option>
+						<?php endforeach; ?>
+					</select>
+				</div>
+				<div class="form-group">
+					<input type="file" class="form-control" name="file">
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" name="data[title]" placeholder="Post title">
+				</div>
+				<div class="form-group">
+					<textarea class="form-control" rows="3" id="textarea" name="data[message]" placeholder="Message..."></textarea>
+				</div>
+				<button type="submit" class="btn btn-primary" name="send">Submit</button>
+			</form>
+		</div>
+	</div>
+</div>

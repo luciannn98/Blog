@@ -1,0 +1,124 @@
+.red {
+	color: red;
+}
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+.login-p {
+    padding-top: 10px;
+    float: right;
+}
+
+.menu-p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+#sidebar {
+    /* don't forget to add all the previously mentioned styles here too */
+    background: #fff;
+    color: #333;
+    transition: all 0.3s;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #eaeaea;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #fff;
+}
+
+#sidebar ul p {
+    color: #333;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+#sidebar ul li a:hover {
+    color: #333;
+    background: #eaeaea;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #333;
+    background: #eaeaea;
+}
+#sidebar ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #eaeaea;
+}
+
+/* -------------- */
+
+.full-height {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.position-ref {
+    position: relative;
+}
+
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+
+.content {
+    text-align: center;
+}
+
+.title {
+    font-size: 70px;
+}
+
+.secound-title {
+    font-size: 35px;
+}
+
+.links > a {
+    color: #636b6f;
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.links > a:hover {
+    text-decoration: underline;
+    transition: .5s;
+    color: red;
+}
+
+.m-b-md {
+    margin-bottom: 30px;
+}

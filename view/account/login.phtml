@@ -1,0 +1,18 @@
+<?php protectLogin(); ?>
+<div class="col-md-8">
+	<div class="card my-4">
+		<h5 class="card-header">Login in your account</h5>
+		<div class="card-body">
+			<form method="post">
+				<div class="form-group">
+					<input class="form-control" type="email" placeholder="Your e-mail adress" name="data[]">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" placeholder="Your password" name="data[]">
+				</div>
+				<button type="submit" class="btn btn-primary btn-block" name="send">Submit</button>
+			</form>
+			<p class="login-p"><a href="<?php print WEB_URL; ?>/register">Do not have account?</a> or <a href="<?php print WEB_URL; ?>/recover">Forgot password?</a></p>
+		</div>
+	</div>
+</div>
